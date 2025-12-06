@@ -1,6 +1,21 @@
 # Useful Keyboard Shortcuts
 
-## Navigation & Search
+## Editor Group Management
+(Right hand alt key shortcuts)
+### Top Row: Layout Actions
+- alt+[ Move Editor into Previous Group
+- alt+] Move Editor into Next Group
+- alt+\ Join Editor Group with Next Group
+- alt+shift+[ Toggle Split Editor in Group
+- alt+shift+] Toggle Layout of Split Editor in Group
+- alt+shift+\ Close All Editors in Group
+### Middle Row: Move Focus and Tabs
+- alt+; Toggle Maximize Editor Group
+- alt+' Focus Next Editor Group
+- alt+shift+; Maximize Editor Group and Hide Side Bars
+- alt+shift+' Toggle Layout
+
+## Navigation & Search Code & Files
 
 ### Edit Locations
 
@@ -126,27 +141,6 @@
   "when": "editorHasDefinitionProvider && editorTextFocus"
 }
 
-## Commands
-
-### Command Palette
-
-{
-"key": "shift+alt+e",
-"command": "workbench.action.showCommands"
-}
-
-### Reload Window
-{
-  "key": "alt+cmd+r ctrl+cmd+r",
-  "command": "workbench.action.reloadWindow",
-  "when": "false"
-}
-
-### Run Task
-{
-  "key": "shift+alt+z",
-  "command": "workbench.action.tasks.runTask"
-}
 
 ## View/Window Management
 
@@ -199,117 +193,6 @@
   "command": "workbench.action.toggleMaximizedPanel",
 }
 
-### Toggle Editor Group Sizes
-{
-  "key": "ctrl+shift+alt+cmd+0",
-  "command": "workbench.action.toggleEditorWidths"
-}
-
-### Maximize Editor Group & Hide Sidebars
-{
-  "key": "ctrl+shift+alt+cmd+0",
-  "command": "workbench.action.maximizeEditorHideSidebar"
-}
-
-### Toggle Vertical/Horizontal Editor Group Layout
-{
-  "key": "ctrl+cmd+3",
-  "command": "workbench.action.toggleEditorGroupLayout"
-}
-
-### Close All Editor Groups
-{
-  "key": "ctrl+shift+alt+cmd+0",
-  "command": "workbench.action.closeAllGroups"
-}
-
-### Close All Editors in Group
-{
-  "key": "ctrl+shift+alt+cmd+0",
-  "command": "workbench.action.closeEditorsInGroup"
-}
-
-### Close Other Editors in Group
-{
-  "key": "ctrl+shift+alt+cmd+0",
-  "command": "workbench.action.closeOtherEditors"
-}
-
-### Close Editors in Other Groups
-{
-  "key": "ctrl+shift+alt+cmd+0",
-  "command": "workbench.action.closeEditorsInOtherGroups"
-}
-
-### Focus Active Editor Group
-{
-  "key": "cmd+j",
-  "command": "workbench.action.focusActiveEditorGroup",
-  "when": "terminalFocus"
-}
-
-### Focus Next Tab
-{
-  "key": "cmd+2",
-  "command": "workbench.action.nextEditorInGroup"
-}
-
-### Focus Previous Tab
-{
-  "key": "cmd+1",
-  "command": "workbench.action.previousEditorInGroup"
-}
-
-### Focus Next Editor Group
-{
-  "key": "shift+cmd+3",
-  "command": "workbench.action.focusNextGroup"
-}
-
-### Move Editor Left
-{
-  "key": "ctrl+cmd+1",
-  "command": "workbench.action.moveEditorLeftInGroup"
-}
-
-### Move Editor Right
-{
-  "key": "ctrl+cmd+2",
-  "command": "workbench.action.moveEditorRightInGroup"
-}
-
-### Move Editor to Previous Group
-{
-  "key": "shift+cmd+1",
-  "command": "workbench.action.moveEditorToPreviousGroup"
-}
-
-### Move Editor to Next Group
-{
-  "key": "shift+cmd+2",
-  "command": "workbench.action.moveEditorToNextGroup"
-}
-
-### Toggle Split Editor in Group
-{
-  "key": "ctrl+alt+cmd+0",
-  "command": "workbench.action.toggleSplitEditorInGroup"
-}
-
-### Expand Editor Group
-{
-  "key": "ctrl+shift+alt+cmd+0",
-  "command": "workbench.action.minimizeOtherEditors"
-}
-
-### Open Recently Used Tab
-{
-  "key": "cmd+3",
-  "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-  "when": "!activeEditorGroupEmpty"
-}
-
-
 ### Toggle Agent/Editor Layout
 {
   "key": "ctrl+shift+alt+cmd+0",
@@ -324,11 +207,55 @@
   "when": "viewContainer.workbench.view.explorer.enabled"
 }
 
+### Open Next View in View Picker
+{
+  "key": "ctrl+q",
+  "command": "workbench.action.quickOpenView"
+}
+{
+  "key": "ctrl+q",
+  "command": "workbench.action.quickOpenNavigateNextInViewPicker",
+  "when": "inQuickOpen && inViewsPicker"
+}
+
+### Open Search View (Primary Sidebar)
+{
+  "key": "shift+cmd+f",
+  "command": "workbench.view.search",
+  "when": "viewContainer.workbench.view.search.enabled"
+}
+
 ### Open Git View (Primary Sidebar)
 {
   "key": "shift+cmd+g",
   "command": "workbench.view.scm",
   "when": "workbench.scm.active"
+}
+
+### Open Debug View (Primary Sidebar)
+{
+  "key": "shift+cmd+d",
+  "command": "workbench.view.debug",
+  "when": "viewContainer.workbench.view.debug.enabled"
+}
+
+### Open Extensions View (Primary Sidebar)
+{
+  "key": "shift+cmd+x",
+  "command": "workbench.view.extensions",
+  "when": "viewContainer.workbench.view.extensions.enabled"
+}
+
+### Open Browser Tab
+{
+  "key": "shift+cmd+b",
+  "command": "composer.toggleBrowserTab"
+}
+
+### Reopen Closed Editor
+{
+  "key": "shift+cmd+t",
+  "command": "workbench.action.reopenClosedEditor"
 }
 
 ### Open Settings
@@ -350,13 +277,73 @@
   "command": "workbench.action.splitEditor"
 }
 
+## Commands
+
+### Command Palette
+
+{
+"key": "shift+alt+e",
+"command": "workbench.action.showCommands"
+}
+
+### Reload Window
+{
+  "key": "alt+cmd+r ctrl+cmd+r",
+  "command": "workbench.action.reloadWindow",
+  "when": "false"
+}
+
+### Run Task
+{
+  "key": "shift+alt+z",
+  "command": "workbench.action.tasks.runTask"
+}
+
+### Open Color Picker
+{
+  "key": "ctrl+shift+alt+cmd+0",
+  "command": "editor.action.showOrFocusStandaloneColorPicker"
+}
+
 ## AI & IntelliSense
 
 ### IntelliSense: Trigger Suggest 
 {
-  "key": "shift+alt+s",
+  "key": "cmd+i",
   "command": "editor.action.triggerSuggest",
-  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+}
+
+### CursorAI: Generate Inline Edits or Question
+{
+  "key": "cmd+k",
+  "command": "aipopup.action.modal.generate",
+  "when": "editorFocus && !composerBarIsVisible"
+}
+
+### CursorAI: Send to Agent & New Chat
+{
+  "key": "cmd+l",
+  "command": "composer.sendToAgent",
+  "when": "editorHasPromptBar && editorPromptBarFocused"
+}
+{
+  "key": "cmd+l",
+  "command": "aichat.newchataction"
+}
+
+### CursorAI: Previous Chat Tab
+{
+  "key": "cmd+[",
+  "command": "composer.previousChatTab",
+  "when": "composerFocused && !editorTextFocus"
+}
+
+### CursorAI: Next Chat Tab
+{
+  "key": "cmd+]",
+  "command": "composer.nextChatTab",
+  "when": "composerFocused && !editorTextFocus"
 }
 
 ### Show Snippets
@@ -538,7 +525,7 @@
 
 ### Delete Line
 {
-  "key": "ctrl+shift+alt+cmd+\\",
+  "key": "cmd+backspace",
   "command": "editor.action.deleteLines",
   "when": "textInputFocus && !editorReadonly"
 }
@@ -562,4 +549,35 @@
   "key": "ctrl+shift+alt+cmd+0",
   "command": "editor.action.joinLines",
   "when": "editorTextFocus && !editorReadonly"
+}
+
+## Terminal
+
+### Clear Console
+{
+  "key": "ctrl+shift+alt+cmd+0",
+  "command": "workbench.debug.panel.action.clearReplAction",
+  "when": "focusedView == 'workbench.panel.repl.view'"
+}
+
+### CursorAI: Generate in Terminal
+{
+  "key": "cmd+k",
+  "command": "cursorai.action.generateInTerminal",
+  "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
+}
+
+### Split Terminal
+{
+  "key": "cmd+\\",
+  "command": "workbench.action.terminal.split",
+  "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+}
+
+## Git Stuff
+
+### Open Local File History Picker
+{
+  "key": "ctrl+shift+alt+cmd+0",
+  "command": "workbench.action.localHistory.restoreViaPicker"
 }

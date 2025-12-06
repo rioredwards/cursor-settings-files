@@ -1,0 +1,75 @@
+- cmd+4
+- cmd+5
+- cmd+6
+- cmd+7
+- cmd+8
+- cmd+9
+- cmd+0
+- shift+cmd+4
+- shift+cmd+5
+- shift+cmd+6
+- shift+cmd+7
+- shift+cmd+8
+- shift+cmd+9
+- shift+cmd+0
+- shift+cmd+-
+- shift+cmd+=
+- cmd+e
+- cmd+r (Rename Symbol)
+- cmd+y (AI:Accept Partial Edits)
+- cmd+u
+- cmd+i (IntelliSense: Trigger Suggest)
+- cmd+o
+- cmd+p
+- cmd+[ (CursorAI: Previous Chat Tab)
+- cmd+] (CursorAI: Next Chat Tab)
+- cmd+\\ (Split Terminal)
+- cmd+d (Search Symbols in Current File)
+- cmd+f (Find in File)
+- cmd+g (Find Next)
+- cmd+h (View: Toggle Panel Visibility)
+- cmd+j (Terminal: Focus)
+- cmd+l (CursorAI: Send to Agent & New Chat)
+- cmd+shift+g (Find Previous)
+- cmd+; (CursorAI: Cycle Composer Location)
+- cmd+' (CursorAI: Open Branch Menu)
+- cmd+b
+- cmd+.
+- shift+cmd+y
+- shift+cmd+u
+- shift+cmd+h (View: Toggle Maximized Panel)
+- shift+cmd+k
+- shift+cmd+l
+- shift+cmd+;
+- shift+cmd+'
+- shift+cmd+c
+- shift+cmd+b (Open Browser Tab)
+- shift+cmd+m
+- shift+cmd+,
+- shift+cmd+. (Focus and Select Breadcrumbs)
+- alt+1 (DOES NOT WORK)
+- alt+2 (DOES NOT WORK)
+- alt+6
+- alt+7
+- alt+8
+- alt+9
+- alt+0
+- alt+`
+- alt+o
+- alt+p
+- alt+f
+- alt+g
+- alt+h
+- alt+j
+- alt+k
+- alt+l
+- alt+z (Toggle Word Wrap)
+- alt+x
+- alt+c
+- alt+v
+- alt+b
+- alt+n
+- alt+m
+- alt+,
+- alt+.
+- alt+/
